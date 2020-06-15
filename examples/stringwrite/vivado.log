@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:53:29 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Tue May 26 17:24:10 2020
+# Process ID: 16553
+# Current directory: /home/akos/repos/work/fletcher-oc-accel/examples/stringwrite
+# Command line: vivado
+# Log file: /home/akos/repos/work/fletcher-oc-accel/examples/stringwrite/vivado.log
+# Journal file: /home/akos/repos/work/fletcher-oc-accel/examples/stringwrite/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 17:34:03 2020...

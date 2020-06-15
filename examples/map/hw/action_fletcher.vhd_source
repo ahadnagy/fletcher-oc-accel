@@ -190,8 +190,7 @@ architecture Behavorial of action_fletcher is
   --   1 version                =  1
   --   1 context id             =  1
   -----------------------------------
-  -- SNAP Total:                   5 regsbus_strobe_width
-
+  -- SNAP Total:                   5 regs
 
   constant SNAP_NUM_REGS        : natural := 9;
   constant SNAP_ADDR_WIDTH      : natural := 2 + log2floor(SNAP_NUM_REGS);
