@@ -161,6 +161,15 @@ fstatus_t platformPrepareHostBuffer(const uint8_t *host_source, da_t *device_des
               (unsigned long) host_source,
               (unsigned long) *device_destination,
               size);
+
+  debug_print("[FLETCHER_SNAP] First 3 values in the buffer: 0x%016lX --> 0x%016lX, 0x%016lX --> 0x%016lX, 0x%016lX --> 0x%016lX \n",
+	      (unsigned long) host_source,
+              (unsigned long) *host_source,
+	      (unsigned long) (host_source+1),
+              (unsigned long) *(host_source+1),
+              (unsigned long) (host_source+2),
+              (unsigned long) *(host_source+2)
+              );
   buffer_ptr += size;
   return FLETCHER_STATUS_OK;
 }
