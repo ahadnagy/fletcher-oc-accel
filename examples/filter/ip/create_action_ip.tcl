@@ -27,7 +27,7 @@ create_project action_ip_prj $aip_dir/action_ip_prj -force -part $fpga_part -ip
 #    generate_target all                          [get_files $src_dir/ila_p157/ila_p157.xci] >> $log_file
 set_property target_language VHDL [current_project]
 create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0
-set_property -dict [list CONFIG.C_PROBE38_TYPE {1} CONFIG.C_PROBE37_TYPE {1} CONFIG.C_PROBE36_TYPE {1} CONFIG.C_PROBE27_TYPE {1} CONFIG.C_PROBE13_TYPE {1} CONFIG.C_PROBE8_TYPE {1} CONFIG.C_PROBE38_WIDTH {32} CONFIG.C_PROBE37_WIDTH {32} CONFIG.C_PROBE36_WIDTH {64} CONFIG.C_PROBE27_WIDTH {32} CONFIG.C_PROBE13_WIDTH {64} CONFIG.C_PROBE8_WIDTH {160} CONFIG.C_DATA_DEPTH {65536} CONFIG.C_NUM_OF_PROBES {40} CONFIG.C_ADV_TRIGGER {false}] [get_ips ila_0]
+set_property -dict [list CONFIG.C_PROBE38_TYPE {1} CONFIG.C_PROBE37_TYPE {1} CONFIG.C_PROBE36_TYPE {1} CONFIG.C_PROBE27_TYPE {1} CONFIG.C_PROBE13_TYPE {1} CONFIG.C_PROBE8_TYPE {1} CONFIG.C_PROBE38_WIDTH {8} CONFIG.C_PROBE37_WIDTH {8} CONFIG.C_PROBE36_WIDTH {8} CONFIG.C_PROBE27_WIDTH {8} CONFIG.C_PROBE13_WIDTH {8} CONFIG.C_PROBE8_WIDTH {8} CONFIG.C_DATA_DEPTH {65536} CONFIG.C_NUM_OF_PROBES {40} CONFIG.C_ADV_TRIGGER {false}] [get_ips ila_0]
 set_property generate_synth_checkpoint false [get_files $src_dir/ila_0/ila_0.xci]
 generate_target {instantiation_template} [get_files $src_dir/ila_0/ila_0.xci] 
 generate_target all [get_files  $src_dir/ila_0/ila_0.xci] 
